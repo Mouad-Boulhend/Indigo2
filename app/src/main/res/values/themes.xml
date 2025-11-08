@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Indigo" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#654BEA</item>
+    </style>
+
+    <style name="Theme.Indigo" parent="Base.Theme.Indigo" />
+</resources>
