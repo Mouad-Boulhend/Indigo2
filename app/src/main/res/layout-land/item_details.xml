@@ -10,69 +10,19 @@
     android:background="#FFF"
     android:orientation="vertical"
     >
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:clipChildren="false"
-            android:clipToPadding="false"
-            android:padding="16dp">
-
-            <View
-                android:layout_width="4000dp"
-                android:layout_height="400dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/round_bg"
-                android:translationY="-180dp" />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="top|start"
-                android:backgroundTint="@color/white"
-                android:src="@drawable/arrow"
-                android:id="@+id/back"/>
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_gravity="top|end"
-                android:src="@drawable/edit" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="1dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-
-                    <ImageView
-                        android:layout_width="252dp"
-                        android:layout_height="252dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ingido"
-                        android:translationY="-35dp" />
-
-                </LinearLayout>
-
-            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/rec_white"
-                    android:layout_weight="1"
-                    android:translationY="150dp"
-                    android:padding="24dp"
+                    android:padding="18dp"
                     android:orientation="vertical"
+                    android:layout_gravity="top"
+                    android:layout_weight="1"
                     >
                     <TextView
                         android:layout_width="wrap_content"
@@ -104,7 +54,7 @@
                                 android:layout_marginTop="15dp"
                                 android:text="DEL"
                                 android:textColor="@color/black"
-                                android:textSize="42sp"
+                                android:textSize="32sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -112,7 +62,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Delhi International Airport"
                                 android:textColor="@color/black"
-                                android:textSize="20sp" />
+                                android:textSize="14sp" />
 
                         </LinearLayout>
 
@@ -122,8 +72,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:gravity="center"
-                            android:scaleX="3"
-                            android:scaleY="3"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
                             android:layout_weight="1"
                             android:translationY="15dp">
 
@@ -161,7 +111,7 @@
                                 android:layout_marginTop="15dp"
                                 android:text="BLR"
                                 android:textColor="@color/black"
-                                android:textSize="42sp"
+                                android:textSize="32sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -169,7 +119,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Delhi International Airport"
                                 android:textColor="@color/black"
-                                android:textSize="20sp" />
+                                android:textSize="14sp" />
 
                         </LinearLayout>
 
@@ -202,7 +152,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Passenger Name"
                                 android:textColor="#999999"
-                                android:textSize="22sp" />
+                                android:textSize="14sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -210,7 +160,7 @@
                                 android:layout_marginTop="4dp"
                                 android:text="Shreya Kumar"
                                 android:textColor="#000000"
-                                android:textSize="24sp"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                         </LinearLayout>
@@ -226,7 +176,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Flight Type"
                                 android:textColor="#999999"
-                                android:textSize="22sp" />
+                                android:textSize="14sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -234,7 +184,7 @@
                                 android:layout_marginTop="4dp"
                                 android:text="Economy"
                                 android:textColor="#000000"
-                                android:textSize="24sp"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                         </LinearLayout>
@@ -251,7 +201,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Flight Code"
                                 android:textColor="#999999"
-                                android:textSize="22sp" />
+                                android:textSize="14sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -259,7 +209,7 @@
                                 android:layout_marginTop="4dp"
                                 android:text="IG-2105"
                                 android:textColor="#000000"
-                                android:textSize="24sp"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                         </LinearLayout>
@@ -283,7 +233,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Boarding Time"
                                 android:textColor="#999999"
-                                android:textSize="22sp" />
+                                android:textSize="14sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -291,7 +241,7 @@
                                 android:layout_marginTop="4dp"
                                 android:text="06:15 AM"
                                 android:textColor="#000000"
-                                android:textSize="24sp"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                         </LinearLayout>
@@ -307,7 +257,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Gate"
                                 android:textColor="#999999"
-                                android:textSize="22sp" />
+                                android:textSize="14sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -315,7 +265,7 @@
                                 android:layout_marginTop="4dp"
                                 android:text="A5"
                                 android:textColor="#000000"
-                                android:textSize="24sp"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                         </LinearLayout>
@@ -331,7 +281,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Terminal"
                                 android:textColor="#999999"
-                                android:textSize="22sp" />
+                                android:textSize="14sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -339,7 +289,7 @@
                                 android:layout_marginTop="4dp"
                                 android:text="T2"
                                 android:textColor="#000000"
-                                android:textSize="24sp"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                         </LinearLayout>
@@ -356,7 +306,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Seat Number"
                                 android:textColor="#999999"
-                                android:textSize="22sp" />
+                                android:textSize="14sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -364,47 +314,57 @@
                                 android:layout_marginTop="4dp"
                                 android:text="A5"
                                 android:textColor="#000000"
-                                android:textSize="24sp"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                         </LinearLayout>
 
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rec_white"
+                        android:paddingHorizontal="24dp"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/bar_code"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="8dp"
+                            android:text="1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:letterSpacing="0.2" />
+
+
+
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/rec_white"
-                    android:layout_weight="2"
-                    android:translationY="150dp"
-                    android:paddingHorizontal="24dp"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingTop="80dp"
+                    android:id="@+id/downloadBar"
+                    android:padding="18dp"
                     >
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:src="@drawable/bar_code"
-                        android:scaleType="fitCenter" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="8dp"
-                        android:text="1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2"
-                        android:textColor="#000000"
-                        android:textSize="16sp"
-                        android:letterSpacing="0.2" />
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Terms &amp; Condition"
                         android:textColor="#000000"
-                        android:textSize="22sp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
                     <TextView
                         android:layout_width="wrap_content"
@@ -412,23 +372,20 @@
                         android:layout_marginTop="8dp"
                         android:text="Curabitur ultricies nisi ut vulputate facilisis. Donec pharetra tincidunt velit, sed iaculis est sollicitudin ac."
                         android:textColor="#666666"
-                        android:textSize="22sp" />
+                        android:textSize="14sp" />
                     <com.google.android.material.button.MaterialButton
                         android:layout_width="match_parent"
                         android:layout_height="56dp"
                         android:layout_marginTop="20dp"
                         android:text="Download E-Ticket"
                         android:textColor="@color/white"
-                        android:textSize="22sp"
+                        android:textSize="18sp"
                         android:textStyle="bold"
                         app:cornerRadius="12dp"
                         app:backgroundTint="#654BEA" />
-
-
                 </LinearLayout>
 
-            </LinearLayout>
 
-        </FrameLayout>
+            </LinearLayout>
 
 </LinearLayout>

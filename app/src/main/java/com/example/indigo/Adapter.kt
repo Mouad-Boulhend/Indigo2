@@ -38,10 +38,6 @@ class Adapter(private val flights: List<Flight>) :
         holder.duration.text = flight.duration
         holder.price.text = flight.price
 
-        holder.itemView.setOnClickListener {
-            val intent = Intent(holder.itemView.context, FlightDetailsActivity::class.java)
-            holder.itemView.context.startActivity(intent)
-        }
     }
 
     override fun getItemCount(): Int = flights.size
