@@ -1,5 +1,6 @@
 package com.example.indigo
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -36,6 +37,11 @@ class Adapter(private val flights: List<Flight>) :
         holder.arrivalTime.text = flight.arrivalTime
         holder.duration.text = flight.duration
         holder.price.text = flight.price
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, FlightDetailsActivity::class.java)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = flights.size
