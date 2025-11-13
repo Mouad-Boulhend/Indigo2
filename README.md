@@ -1,4 +1,4 @@
-![Now in Android](app/src/main/res/drawable/ingido.png "Now in Android")
+![Indigo](app/src/main/res/drawable/ingido.png "Indigo")
 
 ===============
 
