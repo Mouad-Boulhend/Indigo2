@@ -2,15 +2,17 @@ package com.example.indigo
 
 import android.os.Build
 import android.os.Bundle
+import android.text.TextUtils.replace
 import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), OnItemClickListener  {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -34,10 +36,28 @@ class MainActivity : AppCompatActivity() {
         )
 
         val rec = findViewById<RecyclerView>(R.id.recyclerView)
-        val adapter = Adapter(lista)
+        val adapter = Adapter(lista, this)
 
         rec.adapter = adapter
         rec.layoutManager = LinearLayoutManager(this)
 
     }
+
+    override fun onItemClick(item: Flight) {
+        val fragment = FlightDetailsFragment()
+
+        val bundle = Bundle().apply {
+            putString("depCode", item.departureCode)
+            putString("arrCode", item.arrivalCode)
+            putString("duration", item.duration)
+            putString("depTime", item.departureTime)
+        }
+        fragment.arguments = bundle
+
+        //supportFragmentManager.commit {
+        //    replace(R.id.itemDetailsFragContainer, fragment)
+        //    addToBackStack(null)
+        //}
+    }
+
 }

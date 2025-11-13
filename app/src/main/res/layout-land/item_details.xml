@@ -52,6 +52,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="15dp"
+                                android:id="@+id/depCode"
                                 android:text="DEL"
                                 android:textColor="@color/black"
                                 android:textSize="32sp"
@@ -110,6 +111,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="15dp"
                                 android:text="BLR"
+                                android:id="@+id/arrCode"
                                 android:textColor="@color/black"
                                 android:textSize="32sp"
                                 android:textStyle="bold" />
@@ -130,6 +132,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:text="04h 30m"
+                        android:id="@+id/duration"
                         android:textColor="@color/black"
                         android:textSize="26sp"
                         android:textStyle="bold" />
@@ -240,6 +243,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
                                 android:text="06:15 AM"
+                                android:id="@+id/depTime"
                                 android:textColor="#000000"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />

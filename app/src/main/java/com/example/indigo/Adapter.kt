@@ -1,6 +1,7 @@
 package com.example.indigo
 
 import android.content.Intent
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 
-class Adapter(private val flights: List<Flight>) :
+class Adapter(private val flights: List<Flight>, val listener: OnItemClickListener) :
     RecyclerView.Adapter<Adapter.FlightCardViewHolder>() {
 
     inner class FlightCardViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -20,6 +21,12 @@ class Adapter(private val flights: List<Flight>) :
         val arrivalTime: TextView = itemView.findViewById(R.id.arrivalTime)
         val duration: TextView = itemView.findViewById(R.id.duration)
         val price: TextView = itemView.findViewById(R.id.price)
+
+        fun bind(item: Flight) {
+            itemView.setOnClickListener {
+                listener.onItemClick(item)
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FlightCardViewHolder {
@@ -38,7 +45,18 @@ class Adapter(private val flights: List<Flight>) :
         holder.duration.text = flight.duration
         holder.price.text = flight.price
 
+        //val bundle = Bundle()
+        //bundle.putString("depCode", flight.departureCode)
+        //bundle.putString("arrCode", flight.arrivalCode)
+        //bundle.putString("duration", flight.duration)
+        //bundle.putString("depTime", flight.departureTime)
+
+        holder.bind(flights[position])
     }
 
     override fun getItemCount(): Int = flights.size
+}
+
+interface OnItemClickListener {
+    fun onItemClick(item: Flight)
 }
