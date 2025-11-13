@@ -29,7 +29,7 @@ Bibliothèques	AndroidX, Fragment KTX (optionnel), Material Components
 
 # 📱 Captures d’écran
 
-<img src="app/src/main/res/drawable/ss_phone.png" style="width: 30%; height: auto; margin: 0 auto; margin-left: auto; margin-right: auto;"/>
-<img src="app/src/main/res/drawable/ss_tablet.png" style="width: 70%; height: auto; margin: 0 auto; margin-left: auto; margin-right: auto;"/>
+<img src="app/src/main/res/drawable/ss_phone.png" style="width: 29%; height: auto; margin: 0 auto; margin-left: auto; margin-right: auto;"/>
+<img src="app/src/main/res/drawable/ss_tablet.png" style="width: 69%; height: auto; margin: 0 auto; margin-left: auto; margin-right: auto;"/>
 
 
