@@ -7,7 +7,7 @@
 Une application Android élégante qui affiche les vols disponibles entre différentes villes avec une interface moderne et fluide.
 Appuie sur un vol pour consulter instantanément tous ses détails.
 
-🌟 Fonctionnalités
+#🌟 Fonctionnalités
 
 🧭 Liste des vols – Affiche une liste défilante de vols avec le nom de la compagnie, les horaires de départ et d’arrivée, la durée et le prix.
 
