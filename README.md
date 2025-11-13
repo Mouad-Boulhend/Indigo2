@@ -28,6 +28,9 @@ Système de build	Gradle
 Bibliothèques	AndroidX, Fragment KTX (optionnel), Material Components
 
 # 📱 Captures d’écran
+
+<img src="app/src/main/res/drawable/ss_phone.png" style="width: 50%; height: auto; display: block; margin: 0 auto; align:center;"/>
+
 ![Indigo](app/src/main/res/drawable/ss_phone.png "Indigo")
 
 ![Indigo](app/src/main/res/drawable/ss_tablet.png "Indigo")
